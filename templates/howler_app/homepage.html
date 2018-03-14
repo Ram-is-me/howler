@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div>
+        <a href = "/homepage/">Home</a>
+        <a href = "/Howls/">Howls</a>
+        <a href = "/users/">Users</a>
+        <a href = "/profile/">My Profile</a>
+        <a href = "/logout/">Logout</a>
+    </div>
+    <div>
+        <br>
+        <a href = "/add_howl/">Howl!</a>
+
+    </div>
+    <div>
+        {%for userhowl in list_of_howls %}
+        {{userhowl.user.username}}
+        <br>
+        {{userhowl.howl}}
+        <br>
+        <br>
+        <br>
+        {%endfor%} 
+    </div>
+</body>
+</html>
